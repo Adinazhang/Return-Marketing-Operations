@@ -144,6 +144,10 @@
 .exec-problem{background:#fffdfa}.exec-no{font-size:14px;color:#a65d35;font-weight:800;letter-spacing:.45px}.exec-problem h3{font-size:22px;line-height:1.3;margin:7px 0 6px;color:#252b28}.exec-problem p{font-size:15px;line-height:1.46;margin:0;color:#67716b}
 .exec-solution{background:#f4ede4;position:relative;padding-left:24px}.exec-arrow{position:absolute;right:17px;top:13px;font-size:22px;color:#a65d35;font-weight:900}.exec-solution h3{font-size:20px;margin:13px 28px 15px 0;color:#2d463c;line-height:1.32}.exec-tags{display:flex;gap:7px;flex-wrap:wrap}.exec-tags span{font-size:13px;border-radius:6px;background:#fffdfa;color:#83573f;padding:7px 9px;font-weight:700}
 .exec-result{background:#294139;color:#fff;display:flex;flex-direction:column;justify-content:center;padding:14px 22px}.exec-check{color:#eeb58c;font-size:14px;font-weight:800;letter-spacing:1px;margin-bottom:8px}.exec-result strong{font-size:21px;line-height:1.35;color:#fff7ef}.exec-result p{font-size:14px;line-height:1.43;color:#d2e0d7;margin:7px 0 0}
+
+/* Service-priority notice below the recommendation stages */
+.service-first-note{flex:0 0 auto;background:#fbf1e8;border:1px solid #edd9c5;border-left:5px solid #a65d35;border-radius:10px;padding:11px 17px;font-size:15px;line-height:1.45;color:#584d43;}
+.service-first-note strong{font-weight:800;color:#a65d35;}
 </style><style>
 /* Executive visual refresh — modeled on the prior warm black/ivory presentation.
    Scope is visual only; the latest 12-page business content is unchanged. */
@@ -499,8 +503,64 @@ html,body{background:#171513;color:var(--ink);font-family:'Noto Sans SC','Micros
 <div class="metric-grid"><div class="metric"><div class="metric-label">有效申请单数</div><div class="big-num">206,323</div><p>申请入口基数</p></div><div class="metric"><div class="metric-label">申请关联订单数</div><div class="big-num">203,278</div><p>以下处理比例的统计基数</p></div><div class="metric"><div class="metric-label">其中有实际售后的订单</div><div class="big-num">187,911</div><p>用于实际售后归因分析</p></div></div>
 <div class="split" style="grid-template-columns:1.18fr .82fr;flex:1">
 <div class="panel"><div class="panel-label">现状处理结构 · 按关联订单去重</div><div class="bar-row"><b>总退款</b><div class="bar-track"><div class="bar-fill refund" style="width:89.6%"></div></div><div class="bar-value">89.6%</div></div><div class="small" style="padding-left:126px">182,101 单；其中退货退款 178,359 单（87.7%）</div><div class="bar-row"><b>总补发</b><div class="bar-track"><div class="bar-fill" style="width:25.5%"></div></div><div class="bar-value">25.5%</div></div><div class="small" style="padding-left:126px">51,817 单；其中补发 50,875 单（25.0%）</div><div class="data-note source-note" style="margin-top:13px">退款与补发可能发生在同一订单，比例不可相加；“补发”不等于“换货”。这里反映处理结构，不是全站退款率，也不能直接算换货率。</div></div>
-<div class="panel dark"><div class="panel-label">改造动作 / BUSINESS LEVER</div><h3>把合适的退款需求引导至换货</h3><p>尺码、颜色、款式及场景不适配 → 展示可售可换商品和 Exchange Now 入口；符合活动条件时显示最高 $20 换货礼遇。</p><div style="font-size:21px;font-weight:800;margin:14px 0;color:#e8b18b">例：原鞋 $99 → 活动鞋 $119<br/>平台承担 $20 · 用户补差 $0</div><p>质量、错漏发、严重物流问题及未解决投诉，服务优先，不做营销打扰。</p></div></div>
-</main><footer class="clean-footer"><span>数据来源：数据中心；数据范围：近1年的售后申请工单。后续应独立追踪“换货引导曝光 → 点击 → 完成换货”及退款选择变化。</span><span>05 / 12</span></footer></section><section class="slide" data-page="6"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">05 / 核心二 · 成功页承接 + 推荐运营</div><h2>先展示售后结果，再把用户引导回商城</h2></header><main>
+<div class="panel dark"><div class="panel-label">改造动作 / BUSINESS LEVER</div><h3>把合适的退款需求引导至换货</h3><p>展示可售可换商品和 Exchange Now 入口；符合活动条件时显示最高 $20 换货礼遇。</p><div style="font-size:21px;font-weight:800;margin:14px 0;color:#e8b18b">例：原鞋 $99 → 活动鞋 $119<br/>平台承担 $20 · 用户补差 $0</div></div></div>
+</main><footer class="clean-footer"><span>数据来源：数据中心；数据范围：近1年的售后申请工单。后续应独立追踪“换货引导曝光 → 点击 → 完成换货”及退款选择变化。</span><span>05 / 12</span></footer></section><section class="slide" data-page="6"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">05 / 核心二 · 归因线上化（现状）</div><h2>售中与自助售后的归因方式不一致</h2><p>现阶段客服介入在系统里人工归因，自助售后则由客服在系统外表格补录；用户原始原因细，但不等于业务责任归因。</p></header><main>
+<div class="v-grid2" style="grid-template-columns:.92fr 1.08fr">
+<div class="v-stack">
+<div class="v-card"><div class="v-eyebrow">PATH A / 客服介入的售中售后</div><div class="v-title">ERP 人工归因</div><div class="v-path"><b>进线客服 → ERP 处理 → 人工填归因</b><p>客服按照预设分类填写商品、供应链、物流、仓库等责任方向。</p></div></div>
+<div class="v-card tinted"><div class="v-eyebrow">PATH B / 用户自助发起售后</div><div class="v-title">线下表格补归因</div><div class="v-path warm"><b>Return 自选详细原因 → 客服线下归类</b><p>用户选择的原因更细，但尚未通过统一规则在线上形成责任归因。</p></div></div>
+<div class="v-callout"><b>问题不在“没有原因”，而在“没有统一责任口径”。</b> 当前主要由客服判断，尚需商品、供应链、仓库、物流等部门核实和认可。</div>
+</div>
+<div class="v-card" style="display:flex;flex-direction:column;gap:11px">
+<div class="v-eyebrow">数据中心 / 实际售后原因明细</div><div class="v-title" style="margin:0">从原始原因看：集中在尺码与穿着体验</div>
+<div class="v-statline"><div class="v-stat"><strong>68.4%</strong><span>尺码与版型 · 128,481</span></div><div class="v-stat"><strong>35.1%</strong><span>客户意愿与体验 · 65,968</span></div><div class="v-stat"><strong>15.4%</strong><span>鞋子不舒服 · 28,927</span></div></div>
+<div class="v-divider"></div>
+<div class="v-rows">
+<div class="v-barrow"><span class="name">尺码大</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="count">63,680</span><span class="pct">33.9%</span></div>
+<div class="v-barrow"><span class="name">尺码小</span><div class="track"><div class="fill" style="width:57.6%"></div></div><span class="count">36,654</span><span class="pct">19.5%</span></div>
+<div class="v-barrow"><span class="name">鞋楦 / 鞋面窄</span><div class="track"><div class="fill" style="width:35.4%"></div></div><span class="count">22,522</span><span class="pct">12.0%</span></div>
+<div class="v-barrow"><span class="name">客户不想要</span><div class="track"><div class="fill orange" style="width:22.6%"></div></div><span class="count">14,371</span><span class="pct">7.6%</span></div>
+<div class="v-barrow"><span class="name">磨脚</span><div class="track"><div class="fill orange" style="width:20.4%"></div></div><span class="count">13,020</span><span class="pct">6.9%</span></div>
+<div class="v-barrow"><span class="name">客户不喜欢</span><div class="track"><div class="fill orange" style="width:16.4%"></div></div><span class="count">10,467</span><span class="pct">5.6%</span></div>
+<div class="v-barrow"><span class="name">支撑不够</span><div class="track"><div class="fill orange" style="width:16.4%"></div></div><span class="count">10,428</span><span class="pct">5.5%</span></div>
+<div class="v-barrow"><span class="name">鞋楦 / 鞋面宽</span><div class="track"><div class="fill" style="width:14.6%"></div></div><span class="count">9,313</span><span class="pct">5.0%</span></div>
+</div>
+<div class="v-foot" style="margin-top:auto">数据来源：数据中心；数据范围：近1年的售后申请工单。已读取 187,902 / 187,911 个实际售后订单；以上为原因类别 / 明细，不代表责任归属。类别可能交叉，比例不可相加。</div>
+</div>
+</div>
+</main><footer class="clean-footer"><span>数据来源：数据中心｜数据范围：近1年的售后申请工单</span><span>06 / 12</span></footer></section><section class="slide" data-page="7"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">06 / 核心二 · 统一口径与整改闭环</div><h2>把“用户说什么”转换成“哪个部门需要改善”</h2><p>原始反馈、初步规则归因与部门核实结论分层留存，按月／季度推送责任部门，并追踪改善效果。</p></header><main>
+<div class="v-stack">
+<div class="v-grid2" style="grid-template-columns:1.15fr .85fr;flex:1">
+<div class="v-card" style="display:flex;flex-direction:column;gap:10px">
+<div class="v-eyebrow">原因结构 / 类别分布</div><div class="v-title" style="margin:0">选取典型原因：更容易定位改善方向</div>
+<div class="v-rows" style="gap:12px;margin-top:5px">
+<div class="v-barrow"><span class="name">尺码与版型</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="count">128,481</span><span class="pct">68.4%</span></div>
+<div class="v-barrow"><span class="name">客户意愿与体验</span><div class="track"><div class="fill orange" style="width:51.3%"></div></div><span class="count">65,968</span><span class="pct">35.1%</span></div>
+<div class="v-barrow"><span class="name">鞋子不舒服</span><div class="track"><div class="fill orange" style="width:22.5%"></div></div><span class="count">28,927</span><span class="pct">15.4%</span></div>
+<div class="v-barrow"><span class="name">我方原因</span><div class="track"><div class="fill" style="width:1.0%"></div></div><span class="count">1,077</span><span class="pct">0.6%</span></div>
+<div class="v-barrow"><span class="name">商品品质与描述</span><div class="track"><div class="fill" style="width:.4%"></div></div><span class="count">512</span><span class="pct">0.3%</span></div>
+<div class="v-barrow"><span class="name">库存与采购</span><div class="track"><div class="fill" style="width:.26%"></div></div><span class="count">332</span><span class="pct">0.2%</span></div>
+<div class="v-barrow"><span class="name">物流与交付</span><div class="track"><div class="fill" style="width:.24%"></div></div><span class="count">302</span><span class="pct">0.2%</span></div>
+</div>
+<div class="v-callout" style="margin-top:auto">图表混合展示大类与原始细项，用于定位重点，不代表互斥的部门责任占比；同一订单可能同时命中多项。</div>
+</div>
+<div class="v-card tinted" style="display:flex;flex-direction:column;gap:10px">
+<div class="v-eyebrow">典型案例 / 归因需要核实</div><div class="v-title" style="margin:0">相同反馈，不一定是同一责任</div>
+<div class="v-flowbox"><b>尺码大 · 63,680</b><p>可能是用户选码，也可能是尺码表建议、商品版型偏差；需要结合 SKU、尺码分布与历史反馈核实。</p></div>
+<div class="v-flowbox"><b>磨脚 · 13,020 / 支撑不够 · 10,428</b><p>既是穿着感受，也可能涉及鞋型、材料与使用场景；需商品团队进一步评估。</p></div>
+<div class="v-flowbox"><b>仓库错发 · 1,074 / 缺货 · 330</b><p>责任线索较明确，但仍需要核对拣配记录、订单执行、库存及采购原因。</p></div>
+<div class="v-flowbox"><b>运输未收到货 · 258</b><p>应结合物流轨迹、仓库出库与签收证据，分清运输、仓储及其他原因。</p></div>
+</div>
+</div>
+<div class="v-bridge">
+<div class="node"><b>原始反馈</b><small>用户选择 + 客服记录</small></div>
+<div class="node"><b>系统初步归因</b><small>统一字典与规则映射</small></div>
+<div class="node"><b>业务部门核实</b><small>商品 / 供应链 / 仓库 / 物流</small></div>
+<div class="node dark"><b>月度 / 季度整改</b><small>责任人、措施、状态与趋势</small></div>
+</div>
+<div class="v-foot">数据来源：数据中心；数据范围：近1年的售后申请工单。图中包含层级不同的类别与细项，可能重复计数，比例不可相加；仍需业务部门核实最终责任归属。</div>
+</div>
+</main><footer class="clean-footer"><span>07 / 12</span></footer></section><section class="slide" data-page="8"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">07 / 核心三 · 成功页承接 + 推荐运营</div><h2>先展示售后结果，再把用户引导回商城</h2></header><main>
 <main>
 <div class="mini-steps">
 <div class="mini-step highlight">① 售后先展示结果<br/><small>结果 + 摘要优先</small></div>
@@ -533,66 +593,9 @@ html,body{background:#171513;color:var(--ink);font-family:'Noto Sans SC','Micros
 <div><b>用户标签</b><span>尺码偏好、售后偏好、价格敏感度及异常获补风险。</span></div>
 <div><b>异常用户差异化策略</b><span>例如：对经核实的“薅羊毛”用户，通过邮件推荐低价、折扣或清仓商品；减少高金额额外补偿方案的展示。</span></div>
 </div>
-
 </div>
-</div>
+</div><div class="service-first-note"><strong>服务优先：</strong>质量、错漏发、严重物流问题及未解决投诉，服务优先，不做营销打扰。</div>
 </main>
-</main><footer class="clean-footer"><span>06 / 12</span></footer></section><section class="slide" data-page="7"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">06 / 核心三 · 归因线上化（现状）</div><h2>售中与自助售后的归因方式不一致</h2><p>现阶段客服介入在系统里人工归因，自助售后则由客服在系统外表格补录；用户原始原因细，但不等于业务责任归因。</p></header><main>
-<div class="v-grid2" style="grid-template-columns:.92fr 1.08fr">
-<div class="v-stack">
-<div class="v-card"><div class="v-eyebrow">PATH A / 客服介入的售中售后</div><div class="v-title">ERP 人工归因</div><div class="v-path"><b>进线客服 → ERP 处理 → 人工填归因</b><p>客服按照预设分类填写商品、供应链、物流、仓库等责任方向。</p></div></div>
-<div class="v-card tinted"><div class="v-eyebrow">PATH B / 用户自助发起售后</div><div class="v-title">线下表格补归因</div><div class="v-path warm"><b>Return 自选详细原因 → 客服线下归类</b><p>用户选择的原因更细，但尚未通过统一规则在线上形成责任归因。</p></div></div>
-<div class="v-callout"><b>问题不在“没有原因”，而在“没有统一责任口径”。</b> 当前主要由客服判断，尚需商品、供应链、仓库、物流等部门核实和认可。</div>
-</div>
-<div class="v-card" style="display:flex;flex-direction:column;gap:11px">
-<div class="v-eyebrow">数据中心 / 实际售后原因明细</div><div class="v-title" style="margin:0">从原始原因看：集中在尺码与穿着体验</div>
-<div class="v-statline"><div class="v-stat"><strong>68.4%</strong><span>尺码与版型 · 128,481</span></div><div class="v-stat"><strong>35.1%</strong><span>客户意愿与体验 · 65,968</span></div><div class="v-stat"><strong>15.4%</strong><span>鞋子不舒服 · 28,927</span></div></div>
-<div class="v-divider"></div>
-<div class="v-rows">
-<div class="v-barrow"><span class="name">尺码大</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="count">63,680</span><span class="pct">33.9%</span></div>
-<div class="v-barrow"><span class="name">尺码小</span><div class="track"><div class="fill" style="width:57.6%"></div></div><span class="count">36,654</span><span class="pct">19.5%</span></div>
-<div class="v-barrow"><span class="name">鞋楦 / 鞋面窄</span><div class="track"><div class="fill" style="width:35.4%"></div></div><span class="count">22,522</span><span class="pct">12.0%</span></div>
-<div class="v-barrow"><span class="name">客户不想要</span><div class="track"><div class="fill orange" style="width:22.6%"></div></div><span class="count">14,371</span><span class="pct">7.6%</span></div>
-<div class="v-barrow"><span class="name">磨脚</span><div class="track"><div class="fill orange" style="width:20.4%"></div></div><span class="count">13,020</span><span class="pct">6.9%</span></div>
-<div class="v-barrow"><span class="name">客户不喜欢</span><div class="track"><div class="fill orange" style="width:16.4%"></div></div><span class="count">10,467</span><span class="pct">5.6%</span></div>
-<div class="v-barrow"><span class="name">支撑不够</span><div class="track"><div class="fill orange" style="width:16.4%"></div></div><span class="count">10,428</span><span class="pct">5.5%</span></div>
-<div class="v-barrow"><span class="name">鞋楦 / 鞋面宽</span><div class="track"><div class="fill" style="width:14.6%"></div></div><span class="count">9,313</span><span class="pct">5.0%</span></div>
-</div>
-<div class="v-foot" style="margin-top:auto">数据来源：数据中心；数据范围：近1年的售后申请工单。已读取 187,902 / 187,911 个实际售后订单；以上为原因类别 / 明细，不代表责任归属。类别可能交叉，比例不可相加。</div>
-</div>
-</div>
-</main><footer class="clean-footer"><span>数据来源：数据中心｜数据范围：近1年的售后申请工单</span><span>07 / 12</span></footer></section><section class="slide" data-page="8"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">07 / 核心三 · 统一口径与整改闭环</div><h2>把“用户说什么”转换成“哪个部门需要改善”</h2><p>原始反馈、初步规则归因与部门核实结论分层留存，按月／季度推送责任部门，并追踪改善效果。</p></header><main>
-<div class="v-stack">
-<div class="v-grid2" style="grid-template-columns:1.15fr .85fr;flex:1">
-<div class="v-card" style="display:flex;flex-direction:column;gap:10px">
-<div class="v-eyebrow">原因结构 / 类别分布</div><div class="v-title" style="margin:0">选取典型原因：更容易定位改善方向</div>
-<div class="v-rows" style="gap:12px;margin-top:5px">
-<div class="v-barrow"><span class="name">尺码与版型</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="count">128,481</span><span class="pct">68.4%</span></div>
-<div class="v-barrow"><span class="name">客户意愿与体验</span><div class="track"><div class="fill orange" style="width:51.3%"></div></div><span class="count">65,968</span><span class="pct">35.1%</span></div>
-<div class="v-barrow"><span class="name">鞋子不舒服</span><div class="track"><div class="fill orange" style="width:22.5%"></div></div><span class="count">28,927</span><span class="pct">15.4%</span></div>
-<div class="v-barrow"><span class="name">我方原因</span><div class="track"><div class="fill" style="width:1.0%"></div></div><span class="count">1,077</span><span class="pct">0.6%</span></div>
-<div class="v-barrow"><span class="name">商品品质与描述</span><div class="track"><div class="fill" style="width:.4%"></div></div><span class="count">512</span><span class="pct">0.3%</span></div>
-<div class="v-barrow"><span class="name">库存与采购</span><div class="track"><div class="fill" style="width:.26%"></div></div><span class="count">332</span><span class="pct">0.2%</span></div>
-<div class="v-barrow"><span class="name">物流与交付</span><div class="track"><div class="fill" style="width:.24%"></div></div><span class="count">302</span><span class="pct">0.2%</span></div>
-</div>
-<div class="v-callout" style="margin-top:auto">图表混合展示大类与原始细项，用于定位重点，不代表互斥的部门责任占比；同一订单可能同时命中多项。</div>
-</div>
-<div class="v-card tinted" style="display:flex;flex-direction:column;gap:10px">
-<div class="v-eyebrow">典型案例 / 归因需要核实</div><div class="v-title" style="margin:0">相同反馈，不一定是同一责任</div>
-<div class="v-flowbox"><b>尺码大 · 63,680</b><p>可能是用户选码，也可能是尺码表建议、商品版型偏差；需要结合 SKU、尺码分布与历史反馈核实。</p></div>
-<div class="v-flowbox"><b>磨脚 · 13,020 / 支撑不够 · 10,428</b><p>既是穿着感受，也可能涉及鞋型、材料与使用场景；需商品团队进一步评估。</p></div>
-<div class="v-flowbox"><b>仓库错发 · 1,074 / 缺货 · 330</b><p>责任线索较明确，但仍需要核对拣配记录、订单执行、库存及采购原因。</p></div>
-<div class="v-flowbox"><b>运输未收到货 · 258</b><p>应结合物流轨迹、仓库出库与签收证据，分清运输、仓储及其他原因。</p></div>
-</div>
-</div>
-<div class="v-bridge">
-<div class="node"><b>原始反馈</b><small>用户选择 + 客服记录</small></div>
-<div class="node"><b>系统初步归因</b><small>统一字典与规则映射</small></div>
-<div class="node"><b>业务部门核实</b><small>商品 / 供应链 / 仓库 / 物流</small></div>
-<div class="node dark"><b>月度 / 季度整改</b><small>责任人、措施、状态与趋势</small></div>
-</div>
-<div class="v-foot">数据来源：数据中心；数据范围：近1年的售后申请工单。图中包含层级不同的类别与细项，可能重复计数，比例不可相加；仍需业务部门核实最终责任归属。</div>
-</div>
 </main><footer class="clean-footer"><span>08 / 12</span></footer></section><section class="slide" data-page="9"><div class="topline"><span>RETURN <i> / </i> MANAGEMENT BRIEF</span><a class="top-demo" href="https://adinazhang.github.io/ReturnDemo/?return-demo=1" rel="noopener noreferrer" target="_blank">↗ 查看交互 Demo</a></div><header><div class="eyebrow">08 / 落地方案 · 数据如何串联</div><h2>把售后申请、推荐和商城购买串成一条链</h2><p>这是第一阶段真正需要打通的数据关系，不再重复介绍推荐类型与用户分层。</p></header><main>
 <div class="v-stack">
 <div class="v-four">
